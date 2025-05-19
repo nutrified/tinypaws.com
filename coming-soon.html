@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - TinyPaws</title>
+    <meta name="description" content="This content is coming soon to TinyPaws - the app that transforms fleeting moments with your pet into lasting memories.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script defer data-domain="tinypaws.com"
+        src="https://analytics.nutrified.com/js/script.outbound-links.tagged-events.js"></script>
+    <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="TinyPaws Logo">
+            </a>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#how-it-works">How It Works</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                </ul>
+                <button id="mobile-waitlist" class="btn btn-primary nav-cta">Join the Waitlist</button>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button id="open-waitlist" class="btn btn-primary nav-cta">Join the Waitlist</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Coming Soon Section -->
+        <section class="coming-soon">
+            <div class="container">
+                <div class="coming-soon-content">
+                    <h1>Coming <span class="text-primary">Soon</span></h1>
+                    <p class="coming-soon-message">We're working on something pawsome! This content will be available soon.</p>
+                    <div class="paw-prints">
+                        <i data-feather="paw" class="paw-icon"></i>
+                        <i data-feather="paw" class="paw-icon"></i>
+                        <i data-feather="paw" class="paw-icon"></i>
+                    </div>
+                    <a href="index.html" class="btn btn-primary btn-large">Back to Home</a>
+                </div>
+                <div class="coming-soon-image">
+                    <img src="images/home.png" alt="TinyPaws App Preview" class="cs-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="TinyPaws Logo">
+                    <p class="mt-4 text-gray-600">Preserving precious pet memories that last a lifetime.</p>
+                    <div class="social-links mt-6">
+                        <a href="https://www.facebook.com/tinypawsapp" aria-label="Facebook">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tinypaws.app" aria-label="Instagram">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com/tinypawsapp" aria-label="Twitter">
+                            <i data-feather="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="coming-soon.html">About Us</a></li>
+                        <li><a href="coming-soon.html">Blog</a></li>
+                        <li><a href="mailto:press@tinypaws.com">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://www.nutrified.com?ref=tinypaws-footer" target="_blank" rel="dofollow">Pet Nutrition</a></li>
+                        <li><a href="https://www.ampawssadors.com?ref=tinypaws-footer" target="_blank" rel="dofollow">Ampawssadors</a></li>
+                        <li><a href="mailto:web@tinypaws.com">Contact Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="coming-soon.html">Privacy Policy</a></li>
+                        <li><a href="coming-soon.html">Terms of Service</a></li>
+                        <li><a href="coming-soon.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 TinyPaws. All rights reserved.</p>
+                <div class="nutrified-partnership">
+                    <p>Brought to you by <a href="https://www.nutrified.com?ref=tinypaws-footer" target="_blank" rel="dofollow">Nutrified</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Waitlist Popup Overlay -->    
+    <div id="waitlist-overlay" class="overlay">
+        <div class="popup">
+            <div class="popup-header">
+                <h3>Join Our Pack</h3>
+                <button id="close-popup" class="close-popup">&times;</button>
+            </div>
+            <div class="popup-content">
+                <p>Be among the first to preserve your pet's legacy when TinyPaws launches.</p>
+                <form id="waitlist-form" class="popup-form">
+                    <div class="form-group">
+                        <label for="popup-email">Email Address*</label>
+                        <input type="email" id="popup-email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="popup-name">Your Name*</label>
+                        <input type="text" id="popup-name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="popup-pet-name">Pet's Name*</label>
+                        <input type="text" id="popup-pet-name" name="pet-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="popup-pet-type">Pet Type*</label>
+                        <select id="popup-pet-type" name="pet-type" required>
+                            <option value="">Select pet type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="rabbit">Rabbit</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="popup-updates" name="updates" checked>
+                        <label for="popup-updates">I'd like to receive updates about TinyPaws and pet wellness tips</label>
+                    </div>
+                    
+                    <div id="form-error" class="error-message"></div>
+                    <div id="form-success" class="success-message"></div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large">JOIN THE WAITLIST</button>
+                </form>
+                
+                <div class="waitlist-perks">
+                    <h4>Waitlist Perks:</h4>
+                    <ul>
+                        <li>Priority access when we launch</li>
+                        <li>3 months of Premium features free</li>
+                        <li>Exclusive founding member badge</li>
+                        <li>Input on future features through our VIP feedback community</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+        });
+    </script>
+</body>
+</html>

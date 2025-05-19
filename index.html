@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyPaws - Preserve Your Pet's Legacy</title>
+    <meta name="description" content="TinyPaws transforms fleeting moments with your pet into lasting memories you can revisit, share, and cherish for a lifetime.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script defer data-domain="tinypaws.com"
+        src="https://analytics.nutrified.com/js/script.outbound-links.tagged-events.js"></script>
+    <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+</head>
+<body>
+    <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="TinyPaws Logo">
+                </a>
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                    <button id="mobile-waitlist" class="btn btn-primary nav-cta">Join the Waitlist</button>
+                </div>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button id="open-waitlist" class="btn btn-primary nav-cta">Join the Waitlist</button>
+            </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1>Every <span class="text-primary">Paw Print</span><br>Tells a Story.<br>Let's Preserve<br>Yours Forever.</h1>
+                        <p class="hero-copy">TinyPaws transforms fleeting moments with your pet into lasting memories you can revisit, share, and cherish for a lifetime. Because when tiny paws leave their mark on our hearts, those moments deserve to be remembered—completely, beautifully, and privately.</p>
+                        <div class="hero-cta">
+                            <button type="button" class="btn btn-accent btn-large" id="hero-join-waitlist">JOIN THE WAITLIST</button>
+                            <a href="#pet-stories" class="btn-text">
+                                <span>See How It Works</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="trust-indicator">From the creators of <a href="https://www.nutrified.com?ref=tinypaws" target="_blank" rel="dofollow">Nutrified</a> and <a href="https://ampawssadors.com?ref=tinypaws" target="_blank" rel="dofollow">Ampawssadors</a></p>
+                    </div>
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="images/home.png" alt="TinyPaws App Mockup" class="phone-mockup-img">
+                            </div>
+                        </div>
+                        <div class="streak-badge">
+                            <div class="streak-label">Daily memory streak</div>
+                            <div class="streak-days">14 days 🔥</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Pet Story Experience Section -->
+        <section class="pet-story-experience">
+            <div class="container">
+                <div class="story-content">
+                    <h2 id="pet-stories">Give Your Pet's Story the Home It Deserves</h2>
+                    <p class="story-intro">Every playful leap, gentle nuzzle, and quiet moment of companionship weaves the unique story of your pet's life. TinyPaws creates a beautiful home for these precious moments to live together.</p>
+                    
+                    <div class="benefit-cards">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                </svg>
+                            </div>
+                            <h3>A Complete Story</h3>
+                            <p>Keep all your pet's memories in one beautiful place, organized chronologically to tell their complete life story.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                </svg>
+                            </div>
+                            <h3>Rich Context</h3>
+                            <p>Capture not just photos but the stories, dates, and special moments that make your pet unique.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-showcase">
+                        <div class="showcase-content">
+                            <h3>Your pet's journey, beautifully preserved</h3>
+                            <p>TinyPaws creates a beautiful, organized timeline that brings together photos, videos, milestones, and stories in one place you can revisit whenever you need a smile.</p>
+                        </div>
+                        <div class="showcase-gallery">
+                            <div class="app-screenshot">
+                                <img src="images/feed.png" alt="TinyPaws Timeline View" class="screenshot-img">
+                            </div>
+                            <div class="app-screenshot">
+                                <img src="images/milestones.png" alt="TinyPaws Memory Detail" class="screenshot-img">
+                            </div>
+                            <div class="app-screenshot">
+                                <img src="images/grid.png" alt="TinyPaws Photo Gallery" class="screenshot-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        
+        <!-- 5. Testimonials Section (Moved down) -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>The Stories Behind the Paws</h2>
+                <p class="section-intro">Real memories from pet parents who use TinyPaws to cherish every moment with their furry family members.</p>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">"</div>
+                            <blockquote>I never thought I'd be the person with 3,000 photos of my dog. But when Cooper started slowing down, every walk, every nap, every familiar greeting became precious in a way I couldn't articulate. TinyPaws didn't just organize those moments—it gave them meaning.</blockquote>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background-color: #FFD1DC;">M</div>
+                            <div class="author-info">
+                                <div class="author-name">Mia</div>
+                                <div class="author-role"><span class="pet-name">Cooper's</span> person</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">"</div>
+                            <blockquote>As a first-time cat parent, I wanted to document Luna growing up but didn't want to spam everyone's social feeds. TinyPaws gave me a private space to build her story day by day, and now I have this incredible time capsule of her first year with us.</blockquote>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background-color: #D1E8FF;">A</div>
+                            <div class="author-info">
+                                <div class="author-name">Alex</div>
+                                <div class="author-role"><span class="pet-name">Luna's</span> person</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Core Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <h2>Capture What Matters Most: The Full Story of Your Pet's Life</h2>
+                <p class="section-intro">Every pet's journey deserves to be remembered—not just in scattered photos, but as a complete narrative that captures their unique personality and your special bond.</p>
+                
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-feather="book-open" stroke-width="2"></i>
+                        </div>
+                        <h3>Digital Pet Storybook</h3>
+                        <ul>
+                            <li>Daily Photo Diary: Capture daily pictures that automatically compile into beautiful video timelines</li>
+                            <li>Chronological Timeline: All moments organized by date, creating a complete life story</li>
+                            <li>AI Assisted Storytelling: Smart technology helps craft meaningful narratives</li>
+                            <li>Memory Prompts: Gentle reminders to capture important moments</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-feather="activity" stroke-width="2"></i>
+                        </div>
+                        <h3>Milestone & Health Tracking</h3>
+                        <ul>
+                            <li>Key Life Events: First day home, training achievements, adventures</li>
+                            <li>Health Journals: Track vet visits, medications, and wellness metrics</li>
+                            <li>Growth Documentation: Weight, size, and developmental changes</li>
+                            <li>Behavioral Notes: Document personality traits and habits as they evolve</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-feather="users" stroke-width="2"></i>
+                        </div>
+                        <h3>Sharing & Community</h3>
+                        <ul>
+                            <li>Curated Feeds: View curated feeds of pets to whose families you've been added</li>
+                            <li>Quick Show Album: Curated highlight reels for easy sharing</li>
+                            <li>Newsletter Updates: Send updates to people who don't use the app</li>
+                            <li>Optional Public Pages: Create "Pawfluencer" profiles for pets with public followings</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-feather="package" stroke-width="2"></i>
+                        </div>
+                        <h3>Premium Physical Products</h3>
+                        <ul>
+                            <li>Printed Pet Storybooks: Transform digital memories into physical keepsakes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <h2>Simple. Joyful. <span class="text-primary">Meaningful.</span></h2>
+                <p class="section-intro">Creating your pet's legacy shouldn't be complicated. TinyPaws makes memory-keeping simple, joyful, and meaningful—with the smallest time investment for the greatest emotional return.</p>
+                
+                <!-- Desktop Steps (Horizontal) -->
+                <div class="process-steps-desktop">
+                    <div class="process-step">
+                        <div class="step-icon-container">
+                            <div class="step-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                                    <circle cx="12" cy="13" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Capture</h3>
+                        <p>Take a daily photo or video, add notes, and tag milestones in just seconds. Our smart reminders ensure you never miss a memory-worthy moment.</p>
+                        <div class="time-badge">Just 30 seconds daily</div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-icon-container">
+                            <div class="step-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2v4"></path>
+                                    <path d="m16.24 7.76 2.83-2.83"></path>
+                                    <path d="M18 12h4"></path>
+                                    <path d="m16.24 16.24 2.83 2.83"></path>
+                                    <path d="M12 18v4"></path>
+                                    <path d="m7.76 16.24-2.83 2.83"></path>
+                                    <path d="M6 12H2"></path>
+                                    <path d="m7.76 7.76-2.83-2.83"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Create</h3>
+                        <p>TinyPaws automatically organizes your moments into beautiful timelines, video compilations, and shareable albums—no design skills required.</p>
+                        <div class="time-badge">Zero effort—we do the work!</div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-icon-container">
+                            <div class="step-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Cherish</h3>
+                        <p>Revisit memories on demand, view your pet's complete story chronologically, or let TinyPaws surprise you with 'memory flashbacks' when you need a smile.</p>
+                        <div class="time-badge">Any time you need a smile</div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-icon-container">
+                            <div class="step-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Commemorate</h3>
+                        <p>Transform your favorite digital memories into premium physical keepsakes—from beautifully designed storybooks to photo calendars and custom prints.</p>
+                        <div class="time-badge">A few minutes to customize</div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Steps (Vertical) -->
+                <div class="process-steps-mobile">
+                    <div class="process-step">
+                        <div class="step-icon-container">
+                            <div class="step-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                                    <circle cx="12" cy="13" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Capture</h3>
+                        <p>Take a daily photo or video, add notes, and tag milestones in just seconds. Our smart reminders ensure you never miss a memory-worthy moment.</p>
+                        <div class="time-badge">Just 30 seconds daily</div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-icon-container">
+                            <div class="step-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2v4"></path>
+                                    <path d="m16.24 7.76 2.83-2.83"></path>
+                                    <path d="M18 12h4"></path>
+                                    <path d="m16.24 16.24 2.83 2.83"></path>
+                                    <path d="M12 18v4"></path>
+                                    <path d="m7.76 16.24-2.83 2.83"></path>
+                                    <path d="M6 12H2"></path>
+                                    <path d="m7.76 7.76-2.83-2.83"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Create</h3>
+                        <p>TinyPaws automatically organizes your moments into beautiful timelines, video compilations, and shareable albums—no design skills required.</p>
+                        <div class="time-badge">Zero effort—we do the work!</div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-icon-container">
+                            <div class="step-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Cherish</h3>
+                        <p>Revisit memories on demand, view your pet's complete story chronologically, or let TinyPaws surprise you with 'memory flashbacks' when you need a smile.</p>
+                        <div class="time-badge">Any time you need a smile</div>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-icon-container">
+                            <div class="step-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Commemorate</h3>
+                        <p>Transform your favorite digital memories into premium physical keepsakes—from beautifully designed storybooks to photo calendars and custom prints.</p>
+                        <div class="time-badge">A few minutes to customize</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <h2>Choose the Perfect Plan for Your Pet's Story</h2>
+                <p>TinyPaws offers both free and premium options to fit your needs. Start preserving memories today at no cost, or unlock the full experience with our premium features.</p>
+                
+                <div class="pricing-plans">
+                    <div class="plan-card free">
+                        <h3>Free Membership</h3>
+                        <div class="plan-price">Free Forever</div>
+                        <ul class="plan-features">
+                            <li>Basic photo storage and organization</li>
+                            <li>Daily photo diary feature (limited)</li>
+                            <li>One pet per account</li>
+                            <li>Limited sharing capabilities</li>
+                        </ul>
+                        <button class="waitlist-btn btn btn-secondary">Join Waitlist</button>
+                    </div>
+                    
+                    <div class="plan-card premium">
+                        <h3>Premium Membership</h3>
+                        <div class="plan-price">€5.99/month</div>
+                        <div class="plan-price-annual">€59.90/year (Save 15%)</div>
+                        <ul class="plan-features">
+                            <li>Unlimited pets</li>
+                            <li>Advanced video compilations</li>
+                            <li>Premium filters and templates</li>
+                            <li>Printed storybook options (additional cost)</li>
+                            <li>Public profile capabilities</li>
+                            <li>Enhanced sharing features</li>
+                            <li>Additional storage</li>
+                        </ul>
+                        <button class="waitlist-btn btn btn-primary">Join Waitlist</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Data Ownership Section -->
+        <section class="data-ownership">
+            <div class="container">
+                <h2>Your Memories, Your Data, Your Control</h2>
+                <p>At TinyPaws, we believe the precious memories you create belong to you and only you. Unlike social platforms that claim rights to your content, we're simply the caretakers, providing a safe space for these moments to live and grow—with your complete control and ownership always guaranteed.</p>
+                
+                <div class="key-points">
+                    <div class="point">
+                        <div class="point-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>100% Data Ownership</h3>
+                        <p>You retain all rights to your content</p>
+                    </div>
+                    
+                    <div class="point">
+                        <div class="point-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h3>Bank-level Security</h3>
+                        <p>Privacy protection you can trust</p>
+                    </div>
+                    
+                    <div class="point">
+                        <div class="point-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                        <h3>Complete Data Portability</h3>
+                        <p>Export your memories anytime</p>
+                    </div>
+                    
+                    <div class="point">
+                        <div class="point-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 6L6 18"></path>
+                                <path d="M6 6l12 12"></path>
+                            </svg>
+                        </div>
+                        <h3>No Data Selling</h3>
+                        <p>No advertising based on your content</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Connection to Nutrified Section -->
+        <section class="nutrified-connection">
+            <div class="container">
+                <h2>Part of a Bigger Story</h2>
+                <h3>A Nutrified Brand</h3>
+                <p>TinyPaws is proudly part of the Nutrified family, built on the same core principles and values. Just as Nutrified is committed to transparency, quality, and the wellbeing of your pets through nutrition, TinyPaws extends these values to memory preservation and celebrating the special bond you share with your companions.</p>
+                <p>Our shared mission is to enhance every aspect of your pet's life and the relationship you cherish. By joining the TinyPaws community, you're not just preserving memories—you're becoming part of a movement dedicated to elevating pet care through thoughtful, innovative solutions.</p>
+            </div>
+        </section>
+
+        <!-- 10. Waitlist Section -->
+        <section class="waitlist" id="waitlist">
+            <div class="container">
+                <h2>Join Our Pack: Be Among the First to Preserve Your Pet's Legacy</h2>
+                <p>The best stories are shared ones. Join our growing community of memory-keepers and be among the first to document your pet's unique journey when TinyPaws launches.</p>
+                <p>Every story matters. Every paw print counts. And sadly, time with our pets is too short not to capture it all. Start your memory preservation journey today.</p>
+                
+                <form class="waitlist-form">
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pet-name">Pet's Name*</label>
+                        <input type="text" id="pet-name" name="pet-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pet-type">Pet Type*</label>
+                        <select id="pet-type" name="pet-type" required>
+                            <option value="">Select pet type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="rabbit">Rabbit</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="updates" name="updates" checked>
+                        <label for="updates">I'd like to receive updates about TinyPaws and pet wellness tips</label>
+                    </div>
+                    
+                    <div id="main-form-error" class="error-message"></div>
+                    <div id="main-form-success" class="success-message"></div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large">JOIN THE WAITLIST</button>
+                </form>
+                
+                <div class="waitlist-perks">
+                    <h3>Waitlist Perks:</h3>
+                    <ul>
+                        <li>Priority access when we launch</li>
+                        <li>3 months of Premium features free</li>
+                        <li>Exclusive founding member badge for your profile</li>
+                        <li>Input on future features through our VIP feedback community</li>
+                    </ul>
+                </div>
+                
+                <div class="waitlist-counter">
+                    <span class="counter-number">500+</span> pet parents already on the waitlist
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2>Common Questions</h2>
+                
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>When will TinyPaws launch, and how will the waitlist work?</h3>
+                            <span class="toggle-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>TinyPaws is scheduled to launch in late 2025. Waitlist members will receive priority access in the order they joined, with early access beginning a few weeks before the public launch.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is TinyPaws free to use?</h3>
+                            <span class="toggle-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>TinyPaws offers both free and premium plans. The free plan includes basic features for one pet, while the premium plan unlocks all features for unlimited pets.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How is TinyPaws different from social media?</h3>
+                            <span class="toggle-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Unlike social media, TinyPaws is designed specifically for pet memory preservation, with chronological organization, privacy controls, and you retain 100% ownership of your content.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I add multiple pets to my account?</h3>
+                            <span class="toggle-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The free plan allows one pet per account, while the premium plan supports unlimited pets.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How does TinyPaws connect to Nutrified?</h3>
+                            <span class="toggle-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>TinyPaws and Nutrified share the same parent company and philosophy of thoughtful pet care. While Nutrified focuses on nutrition, TinyPaws focuses on memory preservation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How secure are my pet's photos and videos?</h3>
+                            <span class="toggle-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>TinyPaws uses bank-level security to protect your data. Your content is private by default and only shared with those you explicitly choose to share with.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I export my data from TinyPaws?</h3>
+                            <span class="toggle-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, TinyPaws offers complete data portability. You can export all your photos, videos, and notes at any time.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is a Pawfluencer profile and how does it work?</h3>
+                            <span class="toggle-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A Pawfluencer profile is an optional public profile for pets with a following. It allows you to share selected content publicly while keeping other memories private.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How is TinyPaws different from just using my phone's camera?</h3>
+                            <span class="toggle-icon"></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>TinyPaws organizes your pet photos chronologically, adds context through notes and milestones, and automatically creates beautiful timelines and compilations that tell your pet's complete story.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. Final CTA Section -->
+        <section class="final-cta">
+            <div class="container">
+                <h2>Start Capturing Your Journey Together</h2>
+                <p>Time with our pets is precious and passes all too quickly. Don't let another day of memories fade away. Join thousands of pet parents already preserving their pet's legacy with TinyPaws.</p>
+                <a href="#waitlist" class="btn btn-primary btn-large">JOIN THE WAITLIST</a>
+            </div>
+            <div class="paw-print-pattern"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="TinyPaws Logo">
+                    <p class="mt-4 text-gray-600">Preserving precious pet memories that last a lifetime.</p>
+                    <div class="social-links mt-6">
+                        <a href="https://www.facebook.com/tinypawsapp" aria-label="Facebook">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tinypaws.app" aria-label="Instagram">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com/tinypawsapp" aria-label="Twitter">
+                            <i data-feather="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="coming-soon.html">About Us</a></li>
+                        <li><a href="coming-soon.html">Blog</a></li>
+                        <li><a href="mailto:press@tinypaws.com">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://www.nutrified.com?ref=tinypaws-footer" target="_blank" rel="dofollow">Pet Nutrition</a></li>
+                        <li><a href="https://www.ampawssadors.com?ref=tinypaws-footer" target="_blank" rel="dofollow">Ampawssadors</a></li>
+                        <li><a href="mailto:web@tinypaws.com">Contact Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="coming-soon.html">Privacy Policy</a></li>
+                        <li><a href="coming-soon.html">Terms of Service</a></li>
+                        <li><a href="coming-soon.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 TinyPaws. All rights reserved.</p>
+                <div class="nutrified-partnership">
+                    <p>Brought to you by <a href="https://www.nutrified.com?ref=tinypaws-footer" target="_blank" rel="dofollow">Nutrified</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Waitlist Popup Overlay -->    
+    <div id="waitlist-overlay" class="overlay">
+        <div class="popup">
+            <div class="popup-header">
+                <h3>Join Our Pack</h3>
+                <button id="close-popup" class="close-popup">&times;</button>
+            </div>
+            <div class="popup-content">
+                <p>Be among the first to preserve your pet's legacy when TinyPaws launches.</p>
+                <form id="waitlist-form" class="popup-form">
+                    <div class="form-group">
+                        <label for="popup-email">Email Address*</label>
+                        <input type="email" id="popup-email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="popup-name">Your Name*</label>
+                        <input type="text" id="popup-name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="popup-pet-name">Pet's Name*</label>
+                        <input type="text" id="popup-pet-name" name="pet-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="popup-pet-type">Pet Type*</label>
+                        <select id="popup-pet-type" name="pet-type" required>
+                            <option value="">Select pet type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="rabbit">Rabbit</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="popup-updates" name="updates" checked>
+                        <label for="popup-updates">I'd like to receive updates about TinyPaws and pet wellness tips</label>
+                    </div>
+                    
+                    <div id="form-error" class="error-message"></div>
+                    <div id="form-success" class="success-message"></div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large">JOIN THE WAITLIST</button>
+                </form>
+                
+                <div class="waitlist-perks">
+                    <h4>Waitlist Perks:</h4>
+                    <ul>
+                        <li>Priority access when we launch</li>
+                        <li>3 months of Premium features free</li>
+                        <li>Exclusive founding member badge</li>
+                        <li>Input on future features through our VIP feedback community</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        feather.replace();
+    });
+</script>
+</body>
+</html>
