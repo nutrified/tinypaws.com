@@ -3,5 +3,11 @@
   "compatibility_date": "2025-05-19",
   "assets": {
     "directory": "."
-  }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "TINYPAWS_WAITLIST_KV",
+      "id": "dbe35c0cdcf345e4a20e756bd953b2ec"
+    }
+  ]
 }
