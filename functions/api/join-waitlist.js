@@ -8,7 +8,7 @@ const ALLOWED_ORIGINS = [
 ];
 
 // KV Namespace binding name - ensure this matches your wrangler.jsonc/dashboard binding
-const KV_NAMESPACE_BINDING = "WAITLIST_KV"; // This is the binding name we'll use in wrangler.jsonc
+const KV_NAMESPACE_BINDING = "TINYPAWS_WAITLIST_KV"; // This is the binding name we'll use in wrangler.jsonc
 
 function getCorsHeaders(requestOrigin) {
   if (requestOrigin && ALLOWED_ORIGINS.includes(requestOrigin)) {
